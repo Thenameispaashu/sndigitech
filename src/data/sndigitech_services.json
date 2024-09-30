@@ -1,0 +1,16 @@
+{
+    "services": [
+      {
+        "id": 1,
+        "title": "Web Development",
+        "slug": "web-development",
+        "description": "Learn the basics of playing guitar with our comprehensive beginner's course.",
+        "price": 99.99,
+        "instructor": "John Doe",
+        "isFeatured": true,
+        "image": "/courses/guitar.jpg" 
+      }
+      
+    ]
+  }
+  
