@@ -9,6 +9,8 @@ import logo from "./images/sn-digitech-logo.png"
 
 function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
+
+  
   return (
     <div
       className={cn("fixed top-10 inset-x-0 max-w-2xl mx-auto z-50  ", className)}>
@@ -30,7 +32,7 @@ function Navbar({ className }: { className?: string }) {
             <ProductItem
               title="Mobile App Development"
               href="/"
-              src=""
+              src="https://www.sndigitech.com/wt_63506_v1/images/app1.png"
               description="SN Digitech providing services globally"
             />
             <ProductItem
