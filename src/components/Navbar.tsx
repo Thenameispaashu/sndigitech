@@ -32,7 +32,7 @@ function Navbar({ className }: { className?: string }) {
             <ProductItem
               title="Mobile App Development"
               href="/"
-              src="https://www.sndigitech.com/wt_63506_v1/images/app1.png"
+              src=""
               description="SN Digitech providing services globally"
             />
             <ProductItem
