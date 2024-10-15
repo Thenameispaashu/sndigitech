@@ -2,14 +2,17 @@
 
 import React, { useState } from "react";
 import { HoveredLink, Menu, MenuItem, ProductItem } from "./ui/navbar-menu";
+import { FloatingNav } from "./ui/floating-navbar";
 import { cn } from "@/utils/cn";
-// import Link from "next/link";
+ import Link from "next/link";
 import Image from "next/image";
 import logo from "./images/sn-digitech-logo.png"
 
-function Navbar({ className }: { className?: string }) {
+export function Navbar({ className }: { className?: string }) {
   const [active, setActive] = useState<string | null>(null);
-
+  
+ 
+  
   
   return (
     <div
@@ -22,7 +25,7 @@ function Navbar({ className }: { className?: string }) {
         
         <HoveredLink href={"/about-us"} >
           <MenuItem setActive={setActive} active={active} item="About Us" >
-
+      
           </MenuItem>
         </HoveredLink>
         
@@ -199,9 +202,9 @@ function Navbar({ className }: { className?: string }) {
         </MenuItem>
         
         
-      </Menu>
+        </Menu>
     </div>
+    
   )
 }
 
-export default Navbar
