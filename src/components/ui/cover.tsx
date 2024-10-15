@@ -31,7 +31,7 @@ export const Cover = ({
       );
       setBeamPositions(positions);
     }
-  }, [ref.current]);
+  }, []);
 
   return (
     <div
@@ -210,19 +210,48 @@ export const Beam = ({
   );
 };
 
+// export const CircleIcon = ({
+//   className,
+//   delay,
+// }: {
+//   className?: string;
+//   delay?: number;
+// }) => {
+//   return (
+//     <div
+//       className={cn(
+//         `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
+//         className
+//       )}
+//     ></div>
+//   );
+// };
+
 export const CircleIcon = ({
   className,
-  delay,
+  delay = 0, // Add default value for delay if needed
 }: {
   className?: string;
   delay?: number;
 }) => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, delay);
+
+    return () => clearTimeout(timer);
+  }, [delay]);
+
   return (
-    <div
-      className={cn(
-        `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
-        className
-      )}
-    ></div>
+    isVisible && (
+      <div
+        className={cn(
+          `pointer-events-none animate-pulse group-hover/cover:hidden group-hover/cover:opacity-100 group h-2 w-2 rounded-full bg-neutral-600 dark:bg-white opacity-20 group-hover/cover:bg-white`,
+          className
+        )}
+      ></div>
+    )
   );
 };
