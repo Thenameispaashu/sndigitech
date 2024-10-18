@@ -1,4 +1,6 @@
+
 import { ClientsFeedback } from "@/components/ClientsFeedback";
+import { Feature } from "@/components/Feature";
 import HeroSection from "@/components/HeroSection";
 import { ServiceSection } from "@/components/ServiceSection";
 
@@ -9,6 +11,8 @@ export default function Home() {
       <HeroSection/>
       <ServiceSection/>
       <ClientsFeedback/>
+      <Feature/>
+
     </main>
     
   );
