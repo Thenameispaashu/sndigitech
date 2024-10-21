@@ -20,9 +20,16 @@ export default function RootLayout({
   return (
     <html lang="en" className="dark" >
       <body className={`antialiased ${inter.className} `}>
-        <div className="relative w-full flex items-center justify-center scrollbar-hide "> <Navbar/> </div>
+        <div className="relative w-full flex items-center justify-center scrollbar-hide "> 
+          <Navbar/> 
+         
+        
+        </div>
+        
         {children}
+        
       </body>
+      
     </html>
   );
 }

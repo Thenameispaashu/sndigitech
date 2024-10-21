@@ -2,8 +2,8 @@ import TextRevealByWord from "./ui/TextRevealByWord";
 
 export function Shortabout() {
   return (
-
-      <TextRevealByWord text="Tailwind CSS is awesome for stylingTailwind CSS is awesome for stylingTailwind CSS is awesome for stylingTailwind CSS is awesome for stylingTailwind CSS is awesome for styling."  />
-    
+    <div className="z-999 flex min-h-auto items-center justify-center rounded-lg border border-black bg-black dark:bg-black ">
+      <TextRevealByWord text="SN Digitech Pvt. Ltd. is a leading digital marketing, web design & development company, serving our clients globally." />
+    </div>
   );
 }

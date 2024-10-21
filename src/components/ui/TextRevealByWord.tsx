@@ -21,10 +21,10 @@ export const TextRevealByWord: FC<TextRevealByWordProps> = ({
   return (
     <div ref={targetRef} className={`relative h-[200vh] ${className}`}>
       <div
-        className="sticky top-0 mx-auto flex h-[50%] max-w-4xl items-center bg-transparent px-4 py-20"
+        className="sticky top-0 mx-auto flex h-auto max-w-4xl items-center bg-transparent px-10 py-20"
       >
         <p
-          className="flex flex-wrap text-2xl font-bold text-gray-400 dark:text-gray-600 md:text-3xl lg:text-4xl xl:text-5xl"
+          className="flex flex-wrap text-xl font-bold py-20 text-gray-400 dark:text-gray-800 md:text-3xl lg:text-4xl xl:text-5xl"
         >
           {words.map((word, i) => {
             const start = i / words.length;
@@ -64,3 +64,5 @@ const Word: FC<WordProps> = ({ children, progress, range }) => {
 };
 
 export default TextRevealByWord;
+
+
