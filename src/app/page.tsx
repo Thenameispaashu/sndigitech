@@ -1,4 +1,5 @@
 
+import { AppleCardsCarouselDemo } from "@/components/AppleCardsCarouselDemo";
 import { ClientsFeedback } from "@/components/ClientsFeedback";
 import { Feature } from "@/components/Feature";
 import HeroSection from "@/components/HeroSection";
@@ -14,6 +15,7 @@ export default function Home() {
       <Shortabout/>
       <ClientsFeedback/>
       <Feature/>
+      <AppleCardsCarouselDemo/>
     </main>
     
   );
